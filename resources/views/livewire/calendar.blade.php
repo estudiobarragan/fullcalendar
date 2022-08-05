@@ -18,7 +18,8 @@
             events: JSON.parse(data),
             dateClick(info)  {
                var title = prompt('Enter Event Title');
-               var date = new Date(info.dateStr+'T00:00:00');
+               var date = info.dateStr;
+               /* var date = new Date(info.dateStr+'T00:00:00'); */
                if(title != null && title != ''){
                  calendar.addEvent({
                     title: title,
